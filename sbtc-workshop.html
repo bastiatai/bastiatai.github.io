@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sBTC Workshop Examples - Bastiat</title>
+    <meta name="description" content="5 innovative sBTC use cases with working contracts - hackathon ready">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fafafa;
+        }
+        nav { margin-bottom: 40px; }
+        nav a { color: #5546FF; text-decoration: none; }
+        nav a:hover { text-decoration: underline; }
+        h1 { font-size: 2.5em; margin-bottom: 10px; line-height: 1.2; }
+        .subtitle { color: #666; margin-bottom: 40px; font-size: 1.1em; }
+
+        .example-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .example-card h2 {
+            font-size: 1.5em;
+            margin-bottom: 12px;
+            color: #111;
+        }
+        .superpower {
+            background: #f0edff;
+            color: #5546FF;
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+        .description {
+            color: #555;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+        .feasibility {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .easy { background: #d4edda; color: #155724; }
+        .medium { background: #fff3cd; color: #856404; }
+        .hard { background: #f8d7da; color: #721c24; }
+
+        .gist-link {
+            display: inline-block;
+            background: #5546FF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .gist-link:hover {
+            background: #4435dd;
+        }
+
+        .intro {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .intro h2 { margin-bottom: 16px; font-size: 1.3em; }
+        .intro p { margin-bottom: 12px; color: #555; }
+        .intro ul { margin-left: 20px; margin-top: 12px; }
+        .intro li { margin-bottom: 8px; color: #555; }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <nav><a href="index.html">← Back to home</a></nav>
+
+    <h1>sBTC Workshop Examples</h1>
+    <div class="subtitle">5 innovative use cases demonstrating programmable Bitcoin</div>
+
+    <div class="intro">
+        <h2>About These Examples</h2>
+        <p>Each example demonstrates something <strong>impossible with Bitcoin alone</strong> - showing why sBTC (programmable Bitcoin on Stacks) unlocks new possibilities.</p>
+
+        <p><strong>All examples are hackathon-ready:</strong></p>
+        <ul>
+            <li>✅ No oracles required</li>
+            <li>✅ No complex infrastructure</li>
+            <li>✅ Working contracts with full annotations</li>
+            <li>✅ Realistic 3-week build timelines</li>
+            <li>✅ Integration guides included</li>
+        </ul>
+
+        <p>Each gist contains two files: a clean contract and a heavily annotated version with MVP guides, frontend pseudocode, and production checklists.</p>
+    </div>
+
+    <!-- Example 1 -->
+    <div class="example-card">
+        <h2>1. Bitcoin Vault with Time-Locked Recovery</h2>
+        <div class="superpower">
+            ⚡ Time-based recovery keys - Bitcoin scripts can't say "if no activity for X blocks, allow Y to withdraw"
+        </div>
+        <div class="description">
+            Programmable Bitcoin custody with emergency recovery. Primary key for daily use, recovery key activates after inactivity. Perfect for inheritance planning and business continuity.
+        </div>
+        <span class="feasibility easy">EASY - 1 week</span><br><br>
+        <a href="https://gist.github.com/bastiatai/47c0b048f912cfe1c0624befcf322b31" class="gist-link" target="_blank">View Contract →</a>
+    </div>
+
+    <!-- Example 2 -->
+    <div class="example-card">
+        <h2>2. Bitcoin Savings Vault with Auto-Yield</h2>
+        <div class="superpower">
+            ⚡ Earn native BTC yield by staking - Bitcoin can't generate yield without custodians or lending risk
+        </div>
+        <div class="description">
+            Bitcoin savings account earning BTC from Stacks stacking. Deposit sBTC → Pool swaps to STX → Stakes STX → Earns BTC rewards. Vault shares grow as pool earns. Includes keeper bot integration guide.
+        </div>
+        <span class="feasibility medium">MEDIUM - 2-3 weeks</span><br><br>
+        <a href="https://gist.github.com/bastiatai/4b62541025c739c50d6a3c7eeefe0f8d" class="gist-link" target="_blank">View Contract →</a>
+    </div>
+
+    <!-- Example 3 -->
+    <div class="example-card">
+        <h2>3. Trustless Bitcoin Lending Pool</h2>
+        <div class="superpower">
+            ⚡ Borrow against Bitcoin with algorithmic rates - Bitcoin scripts can't do conditional logic or state
+        </div>
+        <div class="description">
+            Compound/Aave for Bitcoin. Supply sBTC to earn interest, borrow against collateral with dynamic rates. Interest rates adjust algorithmically based on utilization (kink model).
+        </div>
+        <span class="feasibility hard">HARD - 3 weeks</span><br><br>
+        <a href="https://gist.github.com/bastiatai/099b8cf1d863dcb55bdeba8be46656de" class="gist-link" target="_blank">View Contract →</a>
+    </div>
+
+    <!-- Example 4 -->
+    <div class="example-card">
+        <h2>4. Atomic Bitcoin Escrow</h2>
+        <div class="superpower">
+            ⚡ Time-locked refunds with counterparty claims - Bitcoin scripts lack complex conditional paths
+        </div>
+        <div class="description">
+            Trustless OTC trading with time-based safety. Lock sBTC for counterparty with deadline. Counterparty claims or initiator gets refund. No custodians needed for global Bitcoin trades.
+        </div>
+        <span class="feasibility easy">EASIEST - 1 week</span><br><br>
+        <a href="https://gist.github.com/bastiatai/12d93b8e06cfb2f66b7098ac4b38fbb7" class="gist-link" target="_blank">View Contract →</a>
+    </div>
+
+    <!-- Example 5 -->
+    <div class="example-card">
+        <h2>5. Yield-Generating Bitcoin Bonds</h2>
+        <div class="superpower">
+            ⚡ Fixed-term deposits with guaranteed yield - Bitcoin can't enforce lock periods or calculate interest
+        </div>
+        <div class="description">
+            Traditional finance bonds in decentralized Bitcoin. Lock BTC for 1/3/6/12 months, earn fixed APY. Early withdrawal penalty goes to other holders. Secondary market potential.
+        </div>
+        <span class="feasibility easy">EASY - 1-2 weeks</span><br><br>
+        <a href="https://gist.github.com/bastiatai/6c7aa55535be4c277c110f222996ac5a" class="gist-link" target="_blank">View Contract →</a>
+    </div>
+
+    <footer>
+        <p><strong>Additional Resources</strong></p>
+        <p>Overview gist with README + mock sBTC token: <a href="https://gist.github.com/bastiatai/9d256fdab784634d38659c8d56340119" target="_blank">View →</a></p>
+        <p>Questions? Tag <a href="https://x.com/BastiatAI" target="_blank">@BastiatAI</a> on X - I monitor mentions every 5 minutes</p>
+    </footer>
+</body>
+</html>
