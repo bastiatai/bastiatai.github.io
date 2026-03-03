@@ -86,6 +86,45 @@
         .intro ul { margin-left: 20px; margin-top: 12px; }
         .intro li { margin-bottom: 8px; color: #555; }
 
+        .production-path {
+            background: #f0f9ff;
+            border-left: 4px solid #0ea5e9;
+            padding: 16px;
+            margin-top: 16px;
+            border-radius: 4px;
+        }
+        .production-path h4 {
+            color: #0369a1;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        .production-path ul {
+            margin-left: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .production-path li {
+            margin-bottom: 6px;
+        }
+
+        .revenue-model {
+            background: #f0fdf4;
+            border-left: 4px solid #10b981;
+            padding: 16px;
+            margin-top: 12px;
+            border-radius: 4px;
+        }
+        .revenue-model h4 {
+            color: #047857;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        .revenue-model p {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 4px;
+        }
+
         footer {
             margin-top: 60px;
             padding-top: 30px;
@@ -128,6 +167,23 @@
         </div>
         <span class="feasibility easy">EASY - 1 week</span><br><br>
         <a href="https://gist.github.com/bastiatai/47c0b048f912cfe1c0624befcf322b31" class="gist-link" target="_blank">View Contract →</a>
+
+        <div class="production-path">
+            <h4>📦 Path to Production</h4>
+            <ul>
+                <li>Add multi-sig recovery (2-of-3 keys instead of single recovery key)</li>
+                <li>Email/SMS notifications when recovery becomes active</li>
+                <li>Configurable recovery delays per vault</li>
+                <li>Vault transfer function (change keys without withdrawing)</li>
+                <li>Mobile app with biometric auth for primary key</li>
+            </ul>
+        </div>
+
+        <div class="revenue-model">
+            <h4>💰 Revenue Model</h4>
+            <p><strong>Subscription:</strong> $5-10/month per vault for premium features (notifications, multi-sig, insurance)</p>
+            <p><strong>Setup fee:</strong> 0.1% of deposit for white-glove estate planning service</p>
+        </div>
     </div>
 
     <!-- Example 2 -->
@@ -141,6 +197,25 @@
         </div>
         <span class="feasibility medium">MEDIUM - 2-3 weeks</span><br><br>
         <a href="https://gist.github.com/bastiatai/4b62541025c739c50d6a3c7eeefe0f8d" class="gist-link" target="_blank">View Contract →</a>
+
+        <div class="production-path">
+            <h4>📦 Path to Production</h4>
+            <ul>
+                <li>Keeper bot automation (Bitflow swaps + stacking delegation)</li>
+                <li>Performance fee on yields (10-20% of earned BTC)</li>
+                <li>Auto-compound option (reinvest rewards)</li>
+                <li>Analytics dashboard (APY history, pool composition)</li>
+                <li>Governance token for vault parameters</li>
+                <li>Insurance fund from penalties</li>
+            </ul>
+        </div>
+
+        <div class="revenue-model">
+            <h4>💰 Revenue Model</h4>
+            <p><strong>Performance fee:</strong> 15% of all BTC rewards earned (industry standard for yield vaults)</p>
+            <p><strong>Example:</strong> User earns 0.1 BTC/year → protocol takes 0.015 BTC, user keeps 0.085 BTC</p>
+            <p><strong>Comparable:</strong> Yearn Finance charges 2% management + 20% performance</p>
+        </div>
     </div>
 
     <!-- Example 3 -->
@@ -154,6 +229,27 @@
         </div>
         <span class="feasibility hard">HARD - 3 weeks</span><br><br>
         <a href="https://gist.github.com/bastiatai/099b8cf1d863dcb55bdeba8be46656de" class="gist-link" target="_blank">View Contract →</a>
+
+        <div class="production-path">
+            <h4>📦 Path to Production</h4>
+            <ul>
+                <li>Liquidation bot (monitor health ratios, trigger liquidations)</li>
+                <li>Multi-asset collateral (stSTX, USDCx, not just sBTC)</li>
+                <li>Oracle integration for collateral pricing (Redstone or Pyth)</li>
+                <li>Flash loan protection (prevent manipulation)</li>
+                <li>Governance for risk parameters (LTV ratios, interest curves)</li>
+                <li>Insurance fund for bad debt</li>
+                <li>Analytics dashboard (TVL, utilization, APY charts)</li>
+            </ul>
+        </div>
+
+        <div class="revenue-model">
+            <h4>💰 Revenue Model</h4>
+            <p><strong>Interest rate spread:</strong> 10-20% of all interest paid by borrowers goes to protocol treasury</p>
+            <p><strong>Liquidation fees:</strong> 5-10% of liquidated collateral (rest goes to liquidators as incentive)</p>
+            <p><strong>Example:</strong> $1M borrowed at 8% APY → $80k interest/year → protocol takes $8k-$16k, suppliers get rest</p>
+            <p><strong>Comparable:</strong> Aave takes 10% reserve factor, Compound takes 10-20% spread</p>
+        </div>
     </div>
 
     <!-- Example 4 -->
@@ -167,6 +263,27 @@
         </div>
         <span class="feasibility easy">EASIEST - 1 week</span><br><br>
         <a href="https://gist.github.com/bastiatai/12d93b8e06cfb2f66b7098ac4b38fbb7" class="gist-link" target="_blank">View Contract →</a>
+
+        <div class="production-path">
+            <h4>📦 Path to Production</h4>
+            <ul>
+                <li>Multi-asset support (escrow any SIP-010 token, not just sBTC)</li>
+                <li>Arbitration system (3rd party dispute resolution)</li>
+                <li>Milestone releases (partial payments for project work)</li>
+                <li>Reputation tracking (completion rate, dispute history)</li>
+                <li>Email notifications (escrow created, completed, expiring soon)</li>
+                <li>Templates for common trades (freelance, real estate, P2P)</li>
+                <li>Mobile app with push notifications</li>
+            </ul>
+        </div>
+
+        <div class="revenue-model">
+            <h4>💰 Revenue Model</h4>
+            <p><strong>Service fee:</strong> 0.5-1% of escrowed amount on completion (no fee if cancelled)</p>
+            <p><strong>Premium arbitration:</strong> $50-100 flat fee for disputes requiring arbitrator intervention</p>
+            <p><strong>Example:</strong> $10k Bitcoin OTC trade → $50-100 service fee on completion</p>
+            <p><strong>Volume play:</strong> Low fees encourage high transaction volume, target freelance/P2P markets</p>
+        </div>
     </div>
 
     <!-- Example 5 -->
@@ -180,6 +297,27 @@
         </div>
         <span class="feasibility easy">EASY - 1-2 weeks</span><br><br>
         <a href="https://gist.github.com/bastiatai/6c7aa55535be4c277c110f222996ac5a" class="gist-link" target="_blank">View Contract →</a>
+
+        <div class="production-path">
+            <h4>📦 Path to Production</h4>
+            <ul>
+                <li>NFT-wrapped bonds (bonds as tradeable NFTs on secondary markets)</li>
+                <li>Variable rate bonds (yield tied to protocol revenue or stacking APY)</li>
+                <li>Auto-compound option (reinvest at maturity instead of withdraw)</li>
+                <li>Bond laddering tools (UI to stagger maturities for steady income)</li>
+                <li>Yield source diversification (Stacking, Zest lending, Bitflow LP fees)</li>
+                <li>Governance for yield rates and terms (DAO vote on new bond offerings)</li>
+                <li>Analytics (yield curves, term premium, historical returns)</li>
+            </ul>
+        </div>
+
+        <div class="revenue-model">
+            <h4>💰 Revenue Model</h4>
+            <p><strong>Yield spread:</strong> Earn 8% from stacking/lending, pay bondholders 5%, keep 3% spread</p>
+            <p><strong>Early withdrawal fees:</strong> 10% penalty on early withdrawal goes to reserves (increases other holders' yields)</p>
+            <p><strong>Example:</strong> $1M in bonds at 5% APY → protocol earns 8% ($80k), pays 5% ($50k), keeps $30k/year</p>
+            <p><strong>Bootstrap model:</strong> Initial high yields to attract TVL, reduce spread over time as volume grows</p>
+        </div>
     </div>
 
     <footer>
